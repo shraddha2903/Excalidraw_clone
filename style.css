@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.toolbar {
+    width: 100px;
+    background: #ca91d4;
+    padding: 20px;
+}
+
+.canvas {
+    flex: 1;
+    background: #31596c;
+    border: 1px solid #ddd;
+}
+
+.drawer {
+    width: 200px;
+    background: #ca91d4;
+    padding: 20px;
+}
