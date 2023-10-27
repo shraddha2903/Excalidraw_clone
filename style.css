@@ -1,14 +1,37 @@
-body {
+/* body { */
+    /* display: flex; */
+    /* height: 100vh; */
+    /* margin: 0; */
+    /* overflow: hidden; */
+/* } */
+/* .my_container{
     display: flex;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    flex-direction: row;
+    
+}
+.main-div{
+    display: flex;
+}
+.my_sidenav{
+    padding: 10px;
+    padding-top: 20px;
+    margin-left: 10px;
+}
+.my_side_nav_content{
+    display: block;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
 }
 
-.toolbar {
-    width: 100px;
+
+
+.my_toolbar {
+    display: flex;
+    flex-direction: row;
     background: #ca91d4;
     padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 .canvas {
@@ -22,3 +45,82 @@ body {
     background: #ca91d4;
     padding: 20px;
 }
+ul{
+    list-style: none;
+} */
+
+
+
+body{
+    margin:0;
+    padding:0;
+}
+#root{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+#myCanvas {
+    /* flex: 1;
+    background: #fcfeff;
+    border: 1px solid #ddd; */
+    cursor: auto;
+}
+#top{
+    border: 2px solod red;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    top: 10;
+    padding: 10px;
+}
+ .btn{
+    background-color: transparent;
+    border: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px !important;
+
+}
+.menu{
+    background-color: #ececf3;
+}
+#top> .options{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10;
+    border-radius: 6px;
+    padding: 4px 10px;
+    border: 1px solid #ededed;
+    box-shadow: 2px 2px px #ececf3;
+}
+ .btn:hover{
+    background-color: #eaeaf9;
+    border-radius: 4px;
+    border: none;
+}
+.active{
+    background-color: #130be4;
+    color: white;
+    border-radius: 4px;
+    border: none;
+}
+#bottom{
+    position: absolute;
+    z-index: 100;
+    left: 20px;
+    bottom: 20px;
+}
+
+#bottom>.options{
+    background-color: #d1d1f2;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
