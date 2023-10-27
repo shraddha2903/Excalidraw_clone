@@ -13,6 +13,17 @@ function toggleMySideNav()
     
 }
 
+document.getElementById("openSideNav").addEventListener("click",function(){
+    const myBlock = document.getElementById("my_side_nav_content");
+    // toggleMySideNav();
+    if (myBlock.style.display == 'block') {
+        myBlock.style.display = 'none';
+    } else {
+        myBlock.style.display = 'block';
+        
+    }
+});
+
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 canvas.width = window.innerWidth;

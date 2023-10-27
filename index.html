@@ -80,7 +80,10 @@
   <div id="root">
 
     <div id="top">
-       <button class="material-icons menu btn">menu</button>
+      <div>
+         <button class="material-icons menu btn" id="openSideNav">menu</button>
+      </div>
+      
        <div class="options">
           <button class="material-icons btn" id ="pencil">edit</button>
           <button class="material-symbols-outlined btn">brightness_1</button>
@@ -92,9 +95,38 @@
             <input type="color" name="color-picker" id="color-picker">
         </div>
 
-        <div ></div>
-        
+        <div></div>
+
+      </div>
+      
+    <div class="my_side_nav_content" style="display: none;" id="my_side_nav_content">
+      <ul>
+        <li>Open</li>
+        <li>Save to</li>
+        <li>Export image...</li>
+        <li>Live collaboration...</li>
+        <li>Help</li>
+        <li>Reset the canvas</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>Excalidraw</li>
+        <li>GitHub</li>
+        <li>Discord</li>
+        <li>Twitter</li>
+      </ul>
+      <hr>
+      <ul>
+        <li>Dark mode</li>
+        <li>
+          <select>
+            <option>English</option>
+            <option>Hindi</option>
+          </select>
+        </li>
+      </ul>
     </div>
+
     <canvas id ="myCanvas"></canvas>
 
     <div id="bottom">
